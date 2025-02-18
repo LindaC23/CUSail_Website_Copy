@@ -7,15 +7,17 @@
   text-align: left;
   margin: auto;
   font-family: 'Poppins';
-  font-size: 30px;
-  font-weight: 400;
+  font-size: 27px;
+  font-weight: 300;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-#sub-heading{
+#sub-heading, #mech-team, #nav-team, #bops-team{
   padding-top: 15px;
   font-family: 'Poppins';
-  font-size: 30px;
-  font-weight: 400;
+  font-size: 27px;
+  font-weight: 300;
 }
 
 #full-team-photo{
@@ -25,7 +27,38 @@
   margin: auto;
   text-align: center;
   margin-top: 1em;
+  margin-bottom: 10em;
   border: 1px solid black;
+}
+
+h3 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+#subteam-links {
+  display: flex;
+  flex-direction: horizontal;
+  justify-content: center;
+  gap: 5em;
+  margin-bottom: 10em;
+}
+
+.subteam-card .inner-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  width: 330px;
+  height: 250px;
+}
+
+.subteam-card p {
+  font-weight: 300;
+  font-size: 32px;
+  text-align: center;
+  padding-top:.75em;
 }
 
 .subteam-header{
@@ -45,15 +78,16 @@
   justify-content: center;
   margin: 2em;
   font-family: 'Open Sans';
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .member-card{
-  background: #FBFBFB;
+  background: #323232;
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.25);
   width: 285px;
   height: 425px;
   margin: 1em;
-  
 }
 
 .flip-card {
