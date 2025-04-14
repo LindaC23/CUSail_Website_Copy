@@ -3,7 +3,7 @@ main {
 }
 
 #hero-image{
-  background: url(../images/index/the-godfather.jpg);
+  background: url(../images/index/the-godfather-blurred.png);
   background-size: cover;
   height: 100vh;
 }
@@ -40,6 +40,11 @@ main {
 
 #title h2 {
   padding-left: 4%;
+}
+
+#title img {
+  padding-left: 4%;
+  padding-top: 6%;
 }
 
 #about-us-header {
@@ -94,20 +99,27 @@ main {
 }
 
 #events-container {
+  position: realtive;
+  content: "";
+  clear:both;
+  display: table;
+  margin: auto;
   display: flex;
+  /* 
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   margin-left: 10%;
-  margin-right: 10%;
+  margin-right: 10%; */
 }
 
 .event-card {
   width: 316px;
   height: 460px;
   margin: 1em;
-  background: #FBFBFB;
+  background: #323232;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  float: left;
 }
 
 .event-card img {
@@ -126,10 +138,9 @@ main {
 }
 
 #goals-container {
-
   display: flex;
   flex-direction: row;
-  /*flex-wrap: wrap;*/
+  flex-wrap: wrap;
   justify-content: center;
   margin-left: 10%;
   margin-right: 10%;
@@ -137,7 +148,7 @@ main {
 }
 
 #current-goal {
-  margin-top: 2.2em;
+  /* margin-top: 2.2em; */
 }
 
 #cayuga-description {
@@ -154,14 +165,44 @@ main {
 
 #description-container {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  margin-bottom: 140px;
+  margin-right: 200px;
 }
 
+.goal {
+  width: 600px;
+  height: 460px;
+  margin: 1em;
+  background: #323232;
+  float: left;
+}
+
+.goal img {
+  width: 100%;
+}
+
+.goal h4 {
+  margin-left: 20px;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+.goal p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
 @media (max-width: 700px) {
   #goals-container {
-    width: 85%;
-    margin-left: 5%;
+    /* width: 85%;
+    margin-left: 5%;   */
+    position: realtive;
+    content: "";
+    clear:both;
+    display: table;
+    margin: auto;
+    display: flex;
   }
 
   #title {
