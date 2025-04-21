@@ -98,7 +98,66 @@ main {
   border: 1px solid #DADADA;
 }
 
+/* //new below */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.carousel-viewport {
+  width: 948px; /* 3 × card width + 2 × 8px gap */
+  overflow: hidden;
+}
+
 #events-container {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+  gap: 8px;
+}
+
+.event-card {
+  flex: 0 0 312px; /* fixed width for clean slicing */
+  height: 460px;
+  background: #323232;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  color: white;
+}
+
+.event-card img {
+  width: 100%;
+  height: auto;
+}
+
+.event-card h4,
+.event-card p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.carousel-button {
+  background: none;
+  border: none;
+  font-size: 2em;
+  cursor: pointer;
+  color: white;
+  padding: 0 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  height: 100%;
+}
+
+
+/* old below*/
+
+
+/* #events-container {
   position: realtive;
   content: "";
   clear:both;
@@ -110,9 +169,10 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   margin-left: 10%;
-  margin-right: 10%; */
-}
+  margin-right: 10%; 
+}*/
 
+/*
 .event-card {
   width: 316px;
   height: 460px;
@@ -120,7 +180,7 @@ main {
   background: #323232;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
   float: left;
-}
+} */
 
 .event-card img {
   width: 100%;
@@ -142,8 +202,8 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: auto;
+  margin-right: auto;
   width: 75%;
 }
 
@@ -166,8 +226,12 @@ main {
 #description-container {
   display: flex;
   /* flex-direction: column; */
-  margin-bottom: 140px;
-  margin-right: 200px;
+  margin-bottom: auto;
+  margin-right: auto;
+}
+
+.goal-test{
+  margin-top: 10%;
 }
 
 .goal {
