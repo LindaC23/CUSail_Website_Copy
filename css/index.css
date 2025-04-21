@@ -112,10 +112,16 @@ main {
   border: 1px solid #DADADA;
 }
 
+<<<<<<< HEAD
+=======
+/* //new below */
+>>>>>>> 2ba3a120e2c348860a374ebc4f4361e44fdc8009
 .carousel-container {
   position: relative;
   width: 100%;
   max-width: 1000px;
+<<<<<<< HEAD
+=======
   margin: auto;
   display: flex;
   align-items: center;
@@ -166,6 +172,79 @@ main {
   height: 100%;
 }
 
+
+/* old below*/
+
+
+/* #events-container {
+  position: realtive;
+  content: "";
+  clear:both;
+  display: table;
+>>>>>>> 2ba3a120e2c348860a374ebc4f4361e44fdc8009
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+<<<<<<< HEAD
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.carousel-viewport {
+  width: 948px; /* 3 × card width + 2 × 8px gap */
+  overflow: hidden;
+}
+
+#events-container {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+  gap: 8px;
+}
+=======
+  margin-left: 10%;
+  margin-right: 10%; 
+}*/
+>>>>>>> 2ba3a120e2c348860a374ebc4f4361e44fdc8009
+
+/*
+.event-card {
+  flex: 0 0 312px; /* fixed width for clean slicing */
+  height: 460px;
+  background: #323232;
+<<<<<<< HEAD
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  color: white;
+}
+
+.event-card img {
+  width: 100%;
+  height: auto;
+}
+
+.event-card h4,
+.event-card p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.carousel-button {
+  background: none;
+  border: none;
+  font-size: 2em;
+  cursor: pointer;
+  color: white;
+  padding: 0 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  height: 100%;
+}
+=======
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  float: left;
+} */
+>>>>>>> 2ba3a120e2c348860a374ebc4f4361e44fdc8009
+
 .event-card img {
   width: 100%;
 }
@@ -186,7 +265,11 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+<<<<<<< HEAD
   margin-left: auto; 
+=======
+  margin-left: auto;
+>>>>>>> 2ba3a120e2c348860a374ebc4f4361e44fdc8009
   margin-right: auto;
   width: 75%;
 }
