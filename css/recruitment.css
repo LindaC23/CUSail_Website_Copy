@@ -14,6 +14,10 @@
   margin-bottom: 1em;
 }
 
+h4{
+  margin-bottom: 3%; 
+}
+
 #application-button-section{
   padding-top: 15px;
   padding-bottom: 0px;
@@ -29,14 +33,15 @@
   text-align: center;
   margin: 0px 20px;
   transition-duration: 0.3s;
+  border-radius: 50px;
 }
 
 .application-button:hover{
-  color: white;
+  background-color: #ffffff;
 }
 
 #upperclassmen{
-  border: thick double #B31B1B;
+  border: solid white;
 }
 
 #upperclassmen:hover{
@@ -44,16 +49,21 @@
 }
 
 #underclassmen{
-  border: thick double #65C8D0;
+  border: solid #ffffff;
 }
 
 #underclassmen:hover{
-  background-color: #65C8D0;
+  background-color: #ffffff;
+  color: #323232;
 }
 
 .application-button-text{
-  font-family: 'ElephantOutline';
-  font-size: 40px;
+  font-size: 20px;
+  color: white;
+}
+
+.application-button-text:hover{
+  color: #323232;
 }
 
 .information-sessions {
@@ -63,6 +73,19 @@
 
 #application-info-slides {
   margin-top: 2rem;
+}
+
+.application-container{
+  text-align: center;
+  padding: 2px;
+  margin-top: -6%;
+  background-color: #323232;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  margin-left: 30%;
+  margin-right: 30%; 
+  z-index: 10;
+  position: relative;
+  padding-bottom: 2%;
 }
 
 .iframe-container {
@@ -91,11 +114,15 @@ iframe{
 
 .question-container{
   height: 37px;
-  background: #FBFBFB;
+  background: #323232;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   display: flex;
   cursor: pointer;
+}
+
+.question-container h4{
+  text-align: center;
 }
 
 .question-container:hover{
@@ -110,7 +137,7 @@ iframe{
   margin: auto;
   margin-left: 1em;
   margin-right: 1em;
-  color: #B31B1B;
+  color: #ffffff;
 }
 
 .answer-container{
@@ -132,6 +159,10 @@ iframe{
 #team-photo-container{
     text-align: center;
     margin-top: 8em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    height: 40%;
 }
 
 #team-photo{
@@ -139,6 +170,7 @@ iframe{
   margin: auto;
   border: 1px solid black;
   max-width: 1000px;
+  position: relative;
 }
 
 @media (max-width: 700px){
