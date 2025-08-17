@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Open Sans';
   scroll-behavior: smooth;
@@ -88,7 +92,7 @@ p {
 
 /* desktop top navbar */
 #top-navbar {
-  background-color: #323232;
+  background-color: #292828;
   height: 55px;
   border-style: solid;
   border-width: .015px 0px .05px 0px;

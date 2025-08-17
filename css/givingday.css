@@ -2,7 +2,7 @@
     background-image: none;
   }
    */
-  #page-header{
+   #page-header{
     margin-top: 3.5em;
     background: linear-gradient(to right, #ff1410, #2196f3);
     -webkit-background-clip: text;
@@ -10,57 +10,90 @@
   }
 
   #hero-image{
-    background: url(../images/GivingDay/p1.jpeg);
+    background: url(../images/GivingDay/p2.jpeg);
     background-size: cover;
-    height: 75vh;
+    height: 70vh;
   }
 
+
   .donation-container{
-    height: 37px;
-    background: #323232;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-    display: flex;
-    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 2%;
+    padding-left: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -11%;
+    margin-bottom: -2%;
+    background-color: #323232;
+    width: 400px;
+    height: 15%;
+    float: auto;
+  }
+
+  #giving-day-header {
+    margin-top: 0.5em;
+  }
+
+  #giving-day-button-section{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    display:flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
   }
   
-  #intro{
+  .giving-day-button{
+    color: black;
+    border: 2px solid #ffffff;    
+    padding: 15px 32px;
+    text-align: center;
+    margin: 0px 20px;
+    transition-duration: 0.3s;
+    border-radius: 50px;
+  }
+
+
+  .giving-day-button:hover {
+    background-color: #ffffff; 
+  }
+
+  .giving-day-button:hover .giving-day-button-text {
+      color: #323232; 
+  }
+
+  .giving-day-button-text{
+    font-size: 20px;
+    color: white;
+  }
+
+  #help-out-header{
+    margin-top: 10%;
+  }
+  .intro{
     width: 75%;
     font-weight: normal;
     text-align: center;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
     max-width: 1000px;
+    font-size: 1.5vw;
   }
   
+  /*
   #intro-text {
     font-size: 20px;
   }
+    */
   
-  #button-container{
+  .section-description{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    margin: auto;
-    margin-top: 1em;
-    margin-bottom: 2em;
-  }
-  
-  button{
-    width: 14em;
-    height: 3em;
-    border-radius: 100px;
-    border: 2px solid #B31B1B;
-    font-size: 18px;
-    font-weight: bold;
-    color: #B31B1B;
-    cursor: pointer;
-    outline: none;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 5px;
-  }
-  
-  button:hover{
-    background-color: #B31B1B;
-    color: rgb(153, 133, 133);
+    font-size: 2vw;
   }
 
   #goals-header{
@@ -81,9 +114,21 @@
     max-height: 600px;
   }
 
-  #i1 {
+  .container{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    gap: 5%;
+  }
+
+  .i1 {
     width: 65%;
-    margin: 2rem auto 2rem auto;
+    margin: auto;
+    justify-content: center;
+    /*margin: 8rem auto 2rem auto;
+    */
     max-width: 600px;
     max-height: 700px;
     display: block;
@@ -107,13 +152,13 @@
 
   }
 
-  #goal{
+  .goal{
     margin-top: 2em;
     text-align: center;
     /* margin-left: 2em; */
     /* max-width: 750px; */
   }
-  #description{
+  .description{
     text-align: center;
     margin: 1em 10em 0 10em;
     font-size: 20px;
@@ -125,6 +170,12 @@
     flex-direction: column;
     align-items: center;
   }
+
+
+  
+  .section-description {
+    width: 85%;
+  }
   
   
   main{
@@ -132,3 +183,4 @@
   }
   }
   
+

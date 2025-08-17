@@ -19,8 +19,9 @@ h4{
 }
 
 #application-button-section{
-  padding-top: 15px;
-  padding-bottom: 0px;
+  min-width: 350px;
+  padding-top: 10px;
+  padding-bottom: 50px;
   display:flex;
   flex-direction: row;
   margin: auto;
@@ -31,7 +32,7 @@ h4{
   color: black;
   padding: 15px 32px;
   text-align: center;
-  margin: 0px 20px;
+  margin: 0px 20%;
   transition-duration: 0.3s;
   border-radius: 50px;
 }
@@ -57,6 +58,10 @@ h4{
   color: #323232;
 }
 
+#underclassmen:hover .application-button-text {
+  color: #323232;
+}
+
 .application-button-text{
   font-size: 20px;
   color: white;
@@ -77,8 +82,9 @@ h4{
 
 .application-container{
   text-align: center;
+  min-width: 350px;
   padding: 2px;
-  margin-top: -6%;
+  margin-top: -10%;
   background-color: #323232;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
   margin-left: 30%;
@@ -89,8 +95,22 @@ h4{
 }
 
 .iframe-container {
-  display: flex;
-  justify-content: left;   
+  max-width: 1000px;
+  width: 100%; 
+  aspect-ratio: 16 / 9;
+  margin: 2rem auto 4em auto;
+  position: relative;
+  /* display: flex;
+  justify-content: left;    */
+}
+
+.iframe-container iframe{
+  width: 100%;
+  height: 100%; 
+  border: none; 
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 iframe{
@@ -119,18 +139,35 @@ iframe{
   border-radius: 5px;
   display: flex;
   cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+  transition: transform 0.3s ease;
 }
 
 .question-container h4{
   text-align: center;
 }
 
-.question-container:hover{
-  text-decoration: underline;
+.arrow{
+  /* font-size: 1rem; */
+  color: #ffffff;
+  transition: transform 0.3s ease;
+  font-size: 1.5rem;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(45deg); /* makes it point down */
+  margin-right: 2%;
 }
 
-.question-container:hover p{
-  color: black;
+.question-container:hover{
+  transform: scale(1.02);
+}
+
+.question-container.active span{
+  transform: rotate(225deg);
 }
 
 .question-container p{
@@ -143,17 +180,24 @@ iframe{
 .answer-container{
   margin-bottom: .3em;
   margin-top: .3em;
-  background: #FBFBFB;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  /* background: #393939;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25); */
+  margin-left: 3%;
   border-radius: 5px;
   display: flex;
+  color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
 }
+
+
 
 .answer-container p{
   padding-left: 1em;
   padding-right: 1em;
-  padding-top: .5em;
-  padding-bottom: .5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 #team-photo-container{
@@ -180,11 +224,11 @@ iframe{
 }
 
 @media (max-width: 600px){
-iframe{
+/* iframe{
   width:300px;
   height:168px;
   margin-bottom: 5em;
-}
+} */
 
 #team-photo-container{
   margin-bottom: 10em;
@@ -206,10 +250,10 @@ iframe{
 }
 }
 
-@media (min-width: 1500px){
+/* @media (min-width: 1500px){
   iframe{
     width:1000px;
     height:560px;
     margin-bottom: 5em;
   }
-}
+} */
