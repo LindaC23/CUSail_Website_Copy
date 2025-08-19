@@ -7,17 +7,15 @@
   text-align: left;
   margin: auto;
   font-family: 'Poppins';
-  font-size: 27px;
-  font-weight: 300;
-  padding-left: 5%;
-  padding-right: 5%;
+  font-size: 30px;
+  font-weight: 400;
 }
 
 #sub-heading, #mech-team, #nav-team, #bops-team{
   padding-top: 15px;
   font-family: 'Poppins';
-  font-size: 27px;
-  font-weight: 300;
+  font-size: 30px;
+  font-weight: 400;
 }
 
 #full-team-photo{
@@ -27,7 +25,7 @@
   margin: auto;
   text-align: center;
   margin-top: 1em;
-  margin-bottom: 10em;
+  margin-bottom: 3%;
   border: 1px solid black;
 }
 
@@ -42,7 +40,7 @@ h3 {
   flex-direction: horizontal;
   justify-content: center;
   gap: 5em;
-  margin-bottom: 10em;
+  margin-bottom: 5%;
 }
 
 .subteam-card .inner-card{
@@ -83,8 +81,6 @@ h3 {
   justify-content: center;
   margin: 2em;
   font-family: 'Open Sans';
-  padding-left: 5%;
-  padding-right: 5%;
 }
 
 .member-card{
