@@ -227,21 +227,33 @@ iframe{
   position: relative;
 }
 
+#coffee-chat{
+  margin-top: 3em;
+}
+
+#fall-timeline{
+  margin-top: 5%;
+  width: 60%;
+}
+
 @media (max-width: 700px){
 .question-container{
   height: 50px;
 }
+
+#fall-timeline{
+  width: 100%;
+}
 }
 
 @media (max-width: 600px){
-/* iframe{
-  width:300px;
-  height:168px;
-  margin-bottom: 5em;
-} */
 
 #team-photo-container{
   margin-bottom: 10em;
+}
+
+#fall-timeline{
+  width: 100%;
 }
 
 #text-video-section{
@@ -268,10 +280,3 @@ iframe{
 }
 }
 
-/* @media (min-width: 1500px){
-  iframe{
-    width:1000px;
-    height:560px;
-    margin-bottom: 5em;
-  }
-} */
