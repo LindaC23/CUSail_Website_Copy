@@ -182,21 +182,26 @@ h4 {
 
 @media (max-width: 620px){
 
-main{
-  margin-bottom: 8em;
-}
+  main{
+    margin-bottom: 8em;
+  }
 
-.subteam-description{
-  width: 75%;
-  padding-top: 10px;
-}
+  .subteam-description{
+    width: 75%;
+    padding-top: 10px;
+  }
 
-#who-we-are-description{
-  width: 80%;
-}
+  #who-we-are-description{
+    width: 80%;
+  }
 
-#full-team-photo{
-  width: 80%;
-}
+  #full-team-photo{
+    width: 80%;
+  }
 
+  #subteam-links{
+    display: flex;
+    flex-direction: column;
+
+  }
 }

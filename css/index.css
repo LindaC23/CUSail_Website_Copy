@@ -66,11 +66,15 @@ main {
 }
 
 .section-desccription {
-  width: 90%;
+  width: 55%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   /* margin-bottom: 3em; */
+}
+
+#about-us-container .section-desccription {
+  width: 90%;
 }
 
 #metrics-container {
@@ -192,15 +196,17 @@ main {
 #goals-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   margin-left: 15%; 
   margin-right: 15%;
   width: 60%;
 }
 
-#current-goal {
-  /* margin-top: 2.2em; */
+.picture-goals{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 #cayuga-description {
@@ -250,15 +256,8 @@ main {
 }
 
 @media (max-width: 700px) {
-  #goals-container {
-    /* width: 85%;
-    margin-left: 5%;   */
-    position: realtive;
-    content: "";
-    clear:both;
-    display: table;
-    margin: auto;
-    display: flex;
+  #description-container {
+    flex-direction: column;
   }
 
   #title {
@@ -324,47 +323,118 @@ main {
   #goals-container {
     width: 97%;
     justify-content: center;
-    margin-left: 0%;
+    margin-left: 0;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+    box-sizing: border-box;
   }
 
   main {
     margin-bottom: 10em;
   }
 
-  #goals-container img {
-    height: 40em;
-    margin-right: -1.75em;
-    margin-left: -1.75em;
+  #goals-container img,
+  .goal img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: block;
+    object-fit: cover;
+    max-width: 100%;
   }
+
+  .goal,
+  .goal-test {
+    width: 95%;
+    max-width: 700px;
+    height: auto;
+    margin: 1rem auto;
+    background: #323232;
+    float: none;
+    box-sizing: border-box;
+    padding-bottom: 0.5rem;
+  }
+
 
   #current-goal {
-    margin-top: 3.5em;
+    margin-top: 1.5em;
+    text-align: center;
   }
 
-  #cayuga-description {
-    height: 12.5em;
-  }
-
+  #cayuga-description,
   #ocean-description {
-    height: 11.1em;
+    height: auto;
+    text-align: left;
   }
 
   #goals-container h4 {
-    margin-bottom: 0em;
+    margin-bottom: .25em;
+    text-align: center;
+  }
+
+  .goal p,
+  .goal h4 {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   #description-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
 
   #description-container h4 {
     font-size: 20px;
   }
+
+  .picture-goals{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
 }
 
 @media (min-width: 1500px) {
   #goals-container {
     margin-left: 20em;
+  }
+}
+
+@media (min-width: 621px) {
+  #description-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 1rem;
+  }
+
+  .picture-goals{
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 100%;
+    justify-content: center;
+    gap: 1rem;
+    box-sizing: border-box;
+  }
+
+  .picture-goals .goal {
+    float: none;
+    width: calc(50% - 2rem);
+    max-width: 600px;
+    box-sizing: border-box;
+    margin: 1rem 0;
+  }
+
+  .goal-test {
+    width: 100%;
+    max-width: 900px;
+    margin: 1rem auto 2rem auto;
+    box-sizing: border-box;
   }
 }
